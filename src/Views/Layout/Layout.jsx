@@ -141,7 +141,7 @@ const Layout = () => {
             fontWeight:"600",
             lineHeight:"60px"
           }}>
-            FOR GIVING ME CHANGE BEST REGARDS 
+            FOR GIVING ME GREAT OPPORTUNITY BEST REGARDS 
           </Typography>
           <Typography sx={{
             fontSize:"40px",
