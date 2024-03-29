@@ -35,13 +35,17 @@ const Layout = () => {
       if(!localStorage.getItem("token")){
         navigate("/sign-in")
       }
-        const res = await getLoggedInUser(localStorage.getItem("token"));
 
-      if (res && res.success) {
-        setUser(res.user);
-        setIsLoading(false);
-        return setIsAuthenticated(true);
+      if(localStorage.getItem("token")){
+        const res = await getLoggedInUser(localStorage.getItem("token"));
+        if (res && res.success) {
+          setUser(res.user);
+          setIsLoading(false);
+          return setIsAuthenticated(true);
+        }
+
       }
+
       setIsAuthenticated(false);
       localStorage.clear();
       navigate("/sign-in");
