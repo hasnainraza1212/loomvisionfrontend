@@ -37,7 +37,7 @@ const Layout = () => {
       }
         const res = await getLoggedInUser(localStorage.getItem("token"));
 
-      if (res.success) {
+      if (res && res.success) {
         setUser(res.user);
         setIsLoading(false);
         return setIsAuthenticated(true);
