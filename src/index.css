@@ -1,0 +1,304 @@
+@font-face {
+  font-family: Poppins;
+  src: url("./assets/fonts/Poppins-Regular.ttf");
+}
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Poppins !important;
+}
+.seting :hover {
+  background-color: rgb(255, 255, 255) !important;
+}
+.sendBtn svg {
+  fill: #000000;
+}
+
+.customSidebar .MuiTabs-vertical .MuiTabs-scroller .MuiTabs-indicator {
+  background-color: #6fda44 !important;
+}
+.customSidebar
+  .MuiTabs-vertical
+  .MuiTabs-scroller
+  .MuiTabs-flexContainer
+  .MuiButtonBase-root {
+  color: black !important;
+  margin-bottom: 10px;
+  margin-right: 8px;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  background-color: #333333;
+  transition: 0.4s all;
+  color: white !important;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+.customSidebar
+  .MuiTabs-vertical
+  .MuiTabs-scroller
+  .MuiTabs-flexContainer
+  .MuiButtonBase-root:hover {
+  background-color: #dfdfdf !important;
+  background-color: #575757 !important;
+}
+.customSidebar
+  .MuiTabs-vertical
+  .MuiTabs-scroller
+  .MuiTabs-flexContainer
+  .MuiButtonBase-root.Mui-selected {
+  background-color: #000000 !important;
+  color: white !important;
+}
+
+.avatarGroup .MuiAvatarGroup-root .MuiAvatar-root {
+  background-color: black;
+}
+
+/* loginForm */
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-container {
+  width: 350px;
+  /* height: 500px; */
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 20px 30px;
+}
+
+.title {
+  text-align: center;
+  margin: 10px 0 30px 0;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 15px;
+}
+
+.input {
+  border-radius: 10px;
+  width: 100%;
+  border: 1px solid;
+  outline: 0 !important;
+  box-sizing: border-box;
+  padding: 12px 15px;
+  font-size: 16px;
+}
+
+.page-link {
+  text-decoration: underline;
+  margin: 0;
+  text-align: end;
+  color: black;
+  text-decoration-color: black;
+  transition: 0.5s all;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.page-link:visited {
+  color: #3f3f3f;
+  text-decoration-color: #3f3f3f;
+}
+
+.page-link:hover {
+  color: gray;
+  text-decoration-color: gray;
+}
+
+.form-btn {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 0 !important;
+  outline: 0 !important;
+  background: black;
+  color: white;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.form-btn:active {
+  box-shadow: none;
+}
+
+.sign-up-label {
+  margin: 0;
+  font-size: 11px;
+  color: #747474;
+}
+
+.sign-up-link {
+  margin-left: 1px;
+  font-size: 12px;
+  text-decoration: underline;
+  text-decoration-color: teal;
+  cursor: pointer;
+  font-weight: 800;
+  transition: 0.5s all;
+  color: black;
+}
+
+.sign-up-link:hover {
+  color: #575757;
+}
+
+.buttons-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+.google-login-button {
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  gap: 5px;
+}
+
+.google-login-button {
+  border: 2px solid #747474;
+}
+
+.google-login-button:hover {
+  background-color: rgb(240, 240, 240);
+}
+.google-icon {
+  font-size: 18px;
+  margin-bottom: 1px;
+}
+.fblogo {
+  width: 18px;
+  height: 18px;
+}
+.password {
+  width: 100%;
+  position: relative;
+}
+.password input {
+  width: 100%;
+}
+.password img {
+  position: absolute;
+  top: 25%;
+  right: 4%;
+  cursor: pointer;
+}
+.error {
+  margin: 0;
+  padding: 0;
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.disabled-button {
+  background-color: #ccc; /* Grayed-out background color */
+  color: #888; /* Grayed-out text color */
+  opacity: 0.7; /* Reduced opacity */
+  cursor: not-allowed; /* Disabled cursor */
+  pointer-events: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+/*loginForm  */
+
+.autoComplete .MuiInputBase-root.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline{
+   border: 2px solid #6fda44 !important;
+}
+
+.loader {
+  position: relative;
+  width: 108px;
+  display: flex;
+  justify-content: space-between;
+}
+.loader::after,
+.loader::before {
+  content: "";
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background-color: #fff;
+  background-image: radial-gradient(circle 14px, #0d161b 100%, transparent 0);
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  animation: eyeMove 10s infinite, blink 10s infinite;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+@keyframes eyeMove {
+  0%,
+  10% {
+    background-position: 0px 0px;
+  }
+  13%,
+  40% {
+    background-position: -15px 0px;
+  }
+  43%,
+  70% {
+    background-position: 15px 0px;
+  }
+  73%,
+  90% {
+    background-position: 0px 15px;
+  }
+  93%,
+  100% {
+    background-position: 0px 0px;
+  }
+}
+@keyframes blink {
+  0%,
+  10%,
+  12%,
+  20%,
+  22%,
+  40%,
+  42%,
+  60%,
+  62%,
+  70%,
+  72%,
+  90%,
+  92%,
+  98%,
+  100% {
+    height: 48px;
+  }
+  11%,
+  21%,
+  41%,
+  61%,
+  71%,
+  91%,
+  99% {
+    height: 18px;
+  }
+}
