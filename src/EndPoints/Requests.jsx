@@ -18,7 +18,7 @@ export const GetWithToken =async (endpoint, token)=>{
       const res = await axios.get(url+endpoint, createConfig(token))
       return res.data
    }catch (error) {
-      console.log(error)
+      return error
      }
    }
   
