@@ -81,7 +81,6 @@ const Login = () => {
     if (isValid) {
       setErrors({});
       const res = await logIn(details);
-      console.log(res)
       if (res.success) {
         setSnackBarProps({
           severity: "success",
@@ -90,7 +89,6 @@ const Login = () => {
         setOpen(true);
         const {token, user} = res
         localStorage.setItem("token",token )
-        console.log(res)
         setIsAuthenticated(true)
         navigate("/")
         return setIsLoading(false);

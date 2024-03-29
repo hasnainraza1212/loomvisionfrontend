@@ -36,7 +36,6 @@ const Layout = () => {
         navigate("/sign-in")
       }
         const res = await getLoggedInUser(localStorage.getItem("token"));
-       console.log(res)
 
       if (res.success) {
         setUser(res.user);

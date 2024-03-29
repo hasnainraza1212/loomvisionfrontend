@@ -90,8 +90,8 @@ const SignUp = () => {
          setIsLoading(false);
          formRef.current.reset()
          localStorage.setItem("token", res.token)
-         navigate("/")
-        return console.log(res);
+         return  navigate("/")
+        ;
       }
       setSnackBarProps({
         severity: "error",
